@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('key', models.TextField()),
-                ('locale', models.TextField()),
+                ('language', models.TextField()),
                 ('phrase', models.TextField()),
             ],
         ),

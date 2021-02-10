@@ -37,9 +37,9 @@ INSTALLED_APPS = [
   'django.contrib.sessions',
   'django.contrib.messages',
   'django.contrib.staticfiles',
-  'service',
+  'api',
   'rest_framework',
-  'rest_pandas',
+  'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +71,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'translation.wsgi.application'
+
+# REST framework
+REST_FRAMEWORK = {
+  'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
 
 
 # Database
